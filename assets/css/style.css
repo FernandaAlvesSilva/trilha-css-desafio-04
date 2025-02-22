@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-primary: #f6f6f6;
+    --color-secondary: #23272A;
+    --color-tertiary: #e6e6e6;
+}
+
+
+
+
+body{
+    font-family: 'Open Sans', 'luckiest guy';
+    background-color: var(--color-primary);
+    overflow: scroll;
+
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/*geral*/
+
+h2{
+    font-family: 'luckiest guy';
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+p{
+    font-family: 'Open Sans';
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+/*header*/
+
+header{
+    background-image: url(../css/img/HeaderBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 28.688rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-container{
+    width: 56.25rem;
+    display: inline-block;
+    flex-direction: column;
+    margin: 0.625rem auto;
+    padding: 0.625rem;
+    text-align: center;
+    color: var(--color-primary);
+    word-break: break-word;
+}
+
+.header-container h2{
+    width: 18.75rem;
+    margin: 0.625rem auto;
+    text-transform: uppercase;
+    
+}
+
+.header-container p{
+    width: 43.75rem;
+    margin: 0.625rem auto;
+    word-break: break-word;
+}
+
+.header-container button{
+    margin: 0.625rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 4.375rem;
+    border: none;
+    box-shadow: 0.312rem 0.312rem 0.312rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.btn1{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.btn2{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+
+/*section*/
+
+
+.section1, .sct01, .section3, .sct03{
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.section1, .section2, .section3, .section4{
+    padding: 3.125rem;
+}
+
+.sct01, .sct03, .sct02, .sct04{
+    margin: 0.625rem;
+    gap: 1.875rem;
+}
+
+
+.img1, .img3, .img2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    width: 37.938rem;
+    height: 24.625rem;
+}
+
+.img1 img, .img3 img, .img2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text1, .text3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 21.75rem;
+    height: 23.375rem;
+}
+
+.text1 h2, .text3 h2, .text2 h2{
+    line-height: 3.125rem;
+    text-align: left;
+    
+}
+
+.text1 p, .text3 p, .text2 p{
+    margin-top: 0.625rem;
+    line-height: 1.563rem;
+    text-align: left;
+}
+
+
+.section2, .sct02{
+    background-color: var(--color-tertiary);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.text2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 21.938rem;
+    height: 13.25rem;
+}
+
+.section4, .sct04{
+    background-color: var(--color-tertiary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 48.375rem;
+}
+
+.img4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49rem;
+    height: 31.75rem;
+}
+
+.img4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.text4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height:25rem;
+}
+
+.text4 h2{
+    width: 22.813rem;
+    line-height: 3.125rem;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.text4 p{
+    width: 49.75rem;
+    margin-top: 0.625rem;
+    line-height: 1.563rem;
+    text-align: center;
+}
+
+
+/*footer*/
+
+footer{
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.25rem;
+}
+
+
+/*responsivo*/
+
+@media screen and (max-width: 768px){
+    header{
+        background-image: url(../css/img/headeresponsive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:bottom;
+        height: 26.75rem;
+    }
+
+    .header-container{
+        width: 23.5rem;
+        height: 23.5rem;
+        margin: 0;
+
+    }
+
+    .header-container h2{
+        font-size: 2rem;
+        width: 12.5rem;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .header-container p{
+        font-size: 1rem;
+        width: 23.813rem;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.875rem;
+        height: 8.25rem;
+        text-align: left;
+    }
+
+
+    .header-container button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.625rem auto;
+        padding: 0.625rem 1.25rem;
+        height: 3.375rem;
+        width: 23.813rem;
+    }
+
+    /*section*/
+
+
+    .section1, .section2, .section3, .section4, .sct01, .sct02, .sct03 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 35.813rem;
+    }
+
+    .sct04{
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: center;
+       align-items: center;
+
+    }
+
+    .img1, .img3, .img2, .img4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23.5rem;
+        height: 15.25rem;
+    }
+
+    .img1 img, .img3 img, .img2 img, .img4 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text1, .text3, .text2, .text4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 23.5rem;
+        height: 15.25rem;
+    }
+
+
+    .text1 h2, .text3 h2, .text2 h2, .text4 h2{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: left;
+        align-items: left;  
+    }
+
+    
+
+    .text1 p, .text3 p, .text2 p, .text4 p{
+        font-size: 1rem;
+        margin-top: 0.625rem;
+        line-height: 1.563rem;
+        text-align: left;
+    }
+
+    .text4 p{
+        width: 23.5rem;
+    }
+
+
+
+
+}
+
+
