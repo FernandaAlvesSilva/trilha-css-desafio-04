@@ -36,7 +36,7 @@ Caso tenha dúvidas ou sugestões, entre em contato:
    **GitHub:** https://github.com/FernandaAlvesSilva
 
   
-  ![iPhone-13-PRO-MAX-127 0 0 1](https://github.com/user-attachments/assets/cf57e218-5ff9-4beb-996e-dfe48fb802fc) ![Macbook-Air-127 0 0 1](https://github.com/user-attachments/assets/8daa9ecb-75e2-4ff2-96f6-47a544d8d6ea)
+ ![Macbook-Air-127 0 0 1](https://github.com/user-attachments/assets/8daa9ecb-75e2-4ff2-96f6-47a544d8d6ea)
 
 
 
